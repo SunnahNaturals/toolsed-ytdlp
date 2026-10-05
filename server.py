@@ -7,7 +7,7 @@ from flask import Flask, Response, jsonify, request, stream_with_context
 app = Flask(__name__)
 
 API_KEY = os.environ.get("API_KEY")
-ALLOWED_STREAM_HOSTS = re.compile(r"(^|\.)(okcdn\.ru|mycdn\.me|ok\.ru|odnoklassniki\.ru)$", re.I)
+ALLOWED_STREAM_HOSTS = re.compile(r"(^|\.)(okcdn\.ru|mycdn\.me|ok\.ru|odnoklassniki\.ru|vkuser\.net|vkuserlive\.net|vkuseraudio\.net)$", re.I)
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36"
 
 def authorized():
